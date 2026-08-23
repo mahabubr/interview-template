@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
   res.json({
     success: true,
-    message: "GET",
+    message: "SINGLE GET",
   });
 });
 
