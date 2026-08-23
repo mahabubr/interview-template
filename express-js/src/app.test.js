@@ -25,6 +25,7 @@ describe("GET /your-route", () => {
     expect(response.body).toEqual({
       // expected API response
     });
+    
 
     expect(fetch).toHaveBeenCalled();
   });
