@@ -14,7 +14,7 @@ const result4 = () => {
   return {};
 };
 
-function solve() {
+async function solve() {
   // Start Coding...
 
   const r1 = result1();
@@ -25,6 +25,6 @@ function solve() {
   return { r1, r2, r3, r4 };
 }
 
-const result = solve();
+const result = await solve();
 
 console.log(result);
