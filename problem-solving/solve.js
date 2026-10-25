@@ -15,16 +15,14 @@ const result4 = () => {
 };
 
 async function solve() {
-  // Start Coding...
+  const results = {
+    result1: result1(),
+    result2: result2(),
+    result3: result3(),
+    result4: result4(),
+  };
 
-  const r1 = result1();
-  const r2 = result2();
-  const r3 = result3();
-  const r4 = result4();
-
-  return { r1, r2, r3, r4 };
+  return results;
 }
 
-const result = await solve();
-
-console.log(result);
+solve().then(console.log).catch(console.error);
