@@ -15,6 +15,8 @@ const result4 = () => {
 };
 
 async function solve() {
+  await new Promise((resolve) => setTimeout(resolve, 20000));
+
   const results = {
     result1: result1(),
     result2: result2(),
